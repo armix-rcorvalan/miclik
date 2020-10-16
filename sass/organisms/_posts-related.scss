@@ -1,0 +1,70 @@
+.posts-related
+{
+	background-color: $porcelain;
+	background-image: url('../images/posts-related-bg.svg');
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	background-size: auto 400px, auto 300px;
+	margin-bottom: -1px; //fix svg
+	padding: 3*$lh 0;
+	text-align: center;
+
+	&__heading
+	{
+		margin-bottom: 2*$lh;
+	}
+
+	&__items
+	{
+		display: grid;
+		grid-column-gap: 1*$lh;
+		grid-row-gap: 1*$lh;
+		grid-template-columns: repeat(auto-fit, minmax(240px, 1fr) );
+	}
+
+	&__button-wrapper
+	{
+		margin-top: 1.5*$lh;
+	}
+
+	@include b
+	{
+		&__items
+		{
+			grid-column-gap: 1.75*$lh;
+			grid-row-gap: 1.75*$lh;
+		}
+	}
+
+	@include e
+	{
+		background-size: auto 450px;
+		padding: 5*$lh 0 6*$lh 0;
+
+		&__heading
+		{
+			margin-bottom: 3*$lh;
+		}
+
+		&__button-wrapper
+		{
+			margin-top: 2*$lh;
+		}
+	}
+
+	@include g
+	{
+		background-size: auto 600px;
+		padding: 6*$lh 0 7*$lh 0;
+
+		&__heading
+		{
+			margin-bottom: 4*$lh;
+		}
+
+		&__button-wrapper
+		{
+			margin-top: 3*$lh;
+		}
+	}
+}

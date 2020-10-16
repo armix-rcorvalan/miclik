@@ -1,0 +1,18 @@
+.editor
+{
+	p
+	{
+		margin-bottom: 1*$lh;
+	}
+
+	@include e
+	{
+		font-size: 18px;
+	}
+
+	@include e
+	{
+		font-size: 20px;
+		line-height: 1.25*$lh;
+	}
+}

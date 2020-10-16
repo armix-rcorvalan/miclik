@@ -14,6 +14,7 @@
 @import 'atoms/base';
 @import 'atoms/buttons';
 @import 'atoms/text';
+@import 'atoms/editor';
 @import 'atoms/inputs';
 
 // Molecules
@@ -29,3 +30,6 @@
 @import 'organisms/posts-last';
 @import 'organisms/banner';
 @import 'organisms/footer';
+
+@import 'organisms/posts-single';
+@import 'organisms/posts-related';

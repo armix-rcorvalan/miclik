@@ -1,0 +1,116 @@
+.posts-single
+{
+	background-image: url('../images/posts-single-bg.svg');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: center top;
+	padding: 1*$lh 0;
+
+	&__inner
+	{
+		max-width: 994px;
+	}
+
+	&__wrapper
+	{
+		background: $white;
+		display: grid;
+		grid-template-columns: minmax(0, 1fr);
+		grid-row-gap: 1*$lh;
+		border-radius: 4px;
+		padding: 1*$lh 0;
+		justify-content: center;
+		text-align: center;
+	}
+
+	&__date
+	{
+		color: $slate-gray;
+		font-size: 14px;
+		margin-bottom: -.5*$lh;
+	}
+
+	&__image
+	{
+		border-radius: 14px;
+		display: inline-block;
+		height: auto;
+		width: calc( 100% - 52px);
+	}
+
+	&__share
+	{
+		border-radius: 4px;
+		background: $porcelain;
+		padding: 1*$lh;
+		text-align: center;
+	}
+
+	&__share-title
+	{
+		font-weight: 600;
+		margin-bottom: 1*$lh;
+	}
+
+	&__social-list
+	{
+		display: flex;
+		justify-content: center;
+	}
+
+	&__social-item
+	{
+		margin: 0 8px;
+	}
+
+	@include b
+	{
+		&__wrapper
+		{
+			grid-row-gap: 2*$lh;
+			padding: 2*$lh;
+		}
+	}
+
+	@include d
+	{
+		padding: 2*$lh 0;
+
+		&__wrapper
+		{
+			grid-template-columns: 570px;
+		}
+	}
+
+	@include e
+	{
+		padding: 2.5*$lh 0;
+
+		&__wrapper
+		{
+			grid-row-gap: 2*$lh;
+			padding: 2.25*$lh;
+		}
+
+		&__date
+		{
+			font-size: 16px;
+		}
+
+		&__share-title
+		{
+			font-size: 18px;
+		}
+
+	}
+
+	@include g
+	{
+		padding: 4*$lh 0;
+
+		&__share-title
+		{
+			font-size: 20px;
+		}
+	}
+}
