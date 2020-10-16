@@ -1,0 +1,165 @@
+.title-1
+{
+	color: $bright-gray;
+	font-family: $ff1;
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 1.5*$lh;
+
+	@include e
+	{
+		font-size: 48px;
+		line-height: 1.75*$lh;
+	}
+
+	@include g
+	{
+		font-size: 60px;
+		line-height: 2*$lh;
+	}
+}
+
+.title-2
+{
+	color: $bright-gray;
+	font-family: $ff1;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 1.25*$lh;
+
+	br
+	{
+		display: none;
+	}
+
+	@include a
+	{
+		br
+		{
+			display: inline;
+		}
+	}
+
+	@include e
+	{
+		font-size: 40px;
+		line-height: 1.5*$lh;
+	}
+
+	@include g
+	{
+		font-size: 50px;
+		line-height: 2*$lh;
+	}
+}
+
+.title-3
+{
+	color: $bright-gray;
+	font-family: $ff1;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 1*$lh;
+
+	@include e
+	{
+		font-size: 24px;
+		line-height: 1.25*$lh;
+	}
+
+	@include g
+	{
+		font-size: 30px;
+		line-height: 1.5*$lh;
+	}
+}
+
+.title-4
+{
+	color: $mine-shaft;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: .75*$lh;
+
+	@include g
+	{
+		font-size: 27px;
+		line-height: 1*$lh;
+	}
+}
+
+.subtitle-1
+{
+	color: $apple;
+	font-family: $ff1;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 1*$lh;
+
+	@include e
+	{
+		font-size: 20px;
+		line-height: 1*$lh;
+	}
+
+	@include g
+	{
+		font-size: 25px;
+		line-height: 1.25*$lh;
+	}
+}
+
+.text-1
+{
+	color: $bright-gray;
+	font-family: $ff1;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: .75*$lh;
+
+	@include e
+	{
+		font-size: 20px;
+		line-height: 1*$lh;
+	}
+
+	@include g
+	{
+		font-size: 22px;
+		line-height: 1.25*$lh;
+	}
+}
+
+.text-2
+{
+	color: $bright-gray;
+	font-family: $ff1;
+	font-size: 16px;
+	line-height: 1*$lh;
+
+	@include g
+	{
+		font-size: 22px;
+		line-height: 1.25*$lh;
+	}
+}
+
+.text-small
+{
+	font-size: 12px;
+	font-weight: 500;
+	line-height: .6*$lh;
+}
+
+
+
+
+.title-2 + .text-1
+{
+	margin-top: .25*$lh;
+
+	@include e
+	{
+		margin-top: .5*$lh;
+	}
+}

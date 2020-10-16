@@ -1,0 +1,19 @@
+.breadcrumbs
+{
+	&__list
+	{
+		display: flex;
+	}
+
+	&__item
+	{
+		color: $silver;
+		font-size: 14px;
+
+		&:not(:first-child)::before
+		{
+			content: '>';
+			margin: 0 3px;
+		}
+	}
+}

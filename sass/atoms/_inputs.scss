@@ -1,0 +1,319 @@
+/* 
+.input-text
+{
+	background: $white;
+	border: 1px solid $silver;
+	border-radius: 6px;
+	color: $ebony-clay;
+	display: block;
+	font-size: 11px;
+	height: 1.5*$lh;
+	padding: 0 .5*$lh;
+	width: 100%;
+
+	@include placeholder {
+		color: $silver;
+		opacity: 1;
+	}
+
+	&:focus
+	{
+		box-shadow: 0 0 12px rgba(0, 0, 0, .15);
+	}
+
+	@include l
+	{
+		font-size: 13px;
+		padding: 0 .75*$lh;
+	}
+
+	&--disabled
+	{
+		background-color: $concrete;
+		border-color: $concrete;
+	}
+
+}
+
+.input-switch
+{
+	@include remove-highlight;
+
+	input[type='checkbox']
+	{
+		display: none;
+	}
+
+	label
+	{
+		background-color: transparentize(#747474, .65);
+		border: 1px solid $sunglow;
+		border-radius: 26px;
+		cursor: pointer;
+		height: 16px;
+		position: relative;
+		width: 28px;
+
+		&::after
+		{
+			background-color: $sunglow;
+			border-radius: 50%;
+			content: '';
+			height: 18px;
+			left: 0;
+			position: absolute;
+			top: 50%;
+			transform: translateX(-4px) translateY(-50%);
+			transition: transform .2s ease;
+			width: 18px;
+		}
+	}
+
+	input[type='checkbox']:checked + label
+	{
+		&::after
+		{
+			transform: translateX(calc( 100% - 4px)) translateY(-50%);
+		}
+	}
+
+	@include l
+	{
+		label
+		{
+			height: 24px;
+			width: 40px;
+
+			&::after
+			{
+				transform: translateX(2px) translateY(-50%);
+			}
+		}
+
+		input[type='checkbox']:checked + label
+		{
+			&::after
+			{
+				transform: translateX(100%) translateY(-50%);
+			}
+		}
+	}
+}
+
+
+.input-search
+{
+	background-color: $white;
+	background-image: url('../images/search-icon.svg');
+	background-position: 12px 50%;
+	background-repeat: no-repeat;
+	background-size: 14px auto;
+	border: 1px solid $silver;
+	border-radius: 6px;
+	color: $ebony-clay;
+	display: block;
+	font-size: 11px;
+	height: 1.5*$lh;
+	padding: 0 .5*$lh 0 1.5*$lh;
+	position: relative;
+	width: 100%;
+
+	@include placeholder
+	{
+		color: $silver;
+		opacity: 1;
+	}
+
+
+	&:focus
+	{
+		border-color: $ebony-clay;
+	}
+}
+
+.input-checkbox
+{
+	display: none;
+}
+
+.input-checkbox + label
+{
+	align-items: center;
+	color: $silver;
+	cursor: pointer;
+	display: flex;
+	font-size: 11px;
+
+	&::before
+	{
+		border: 1px solid $silver;
+		color: $white;
+		content: ' ';
+		display: inline-block;
+		font-size: 8px;
+		height: 11px;
+		margin-right: 6px;
+		text-align: center;
+		width: 11px;
+	}
+}
+
+.input-checkbox:checked + label
+{
+	&::before
+	{
+		background: $sunglow;
+		border: 1px solid $sunglow;
+		content: '\2713';
+	}
+}
+
+
+
+.input-checkbox.input-checkbox--filter + label
+{
+	font-size: 15px;
+
+	&::before
+	{
+		border-radius: 50%;
+		height: 7px;
+		margin-right: 10px;
+		width: 7px;
+	}
+}
+
+.input-checkbox.input-checkbox--filter:checked + label
+{
+	color: $sunglow;
+
+	&::before
+	{
+		content: '';
+	}
+}
+
+.tag
+{
+	background: $mercury;
+	border-radius: 15px;
+	color: $silver;
+	display: inline-block;
+	font-size: 12px;
+	height: 19px;
+	line-height: 19px;
+	padding: 0 10px 0 20px;
+	position: relative;
+
+	&::before
+	{
+		color: $gray;
+		content: 'x';
+		display: block;
+		font-size: 12px;
+		left: 8px;
+		margin-right: 5px;
+		position: absolute;
+		top: -1px;
+	}
+
+	&:hover
+	{
+		background: $concrete;
+	}
+}
+
+*/
+
+.input-range
+{
+	&__top,
+	&__bottom
+	{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__bottom
+	{
+		padding: 0 .25*$lh;
+	}
+
+	&__input-wrapper
+	{
+		padding: .5*$lh 0;
+	}
+
+	&__label
+	{
+		font-size: 12px;
+		font-weight: 600;
+	}
+
+	&__value-wrapper
+	{
+		font-size: 18px;
+		font-weight: 700;
+	}
+
+	&__min,
+	&__max
+	{
+		color: $oslo-gray;
+		font-size: 12px;
+		font-weight: 600;
+	}
+
+	@include e
+	{
+		&--large &__top
+		{
+			margin-bottom: .5*$lh;
+		}
+
+		&--large &__label,
+		&--large &__min,
+		&--large &__max,
+		{
+			font-size: 18px;
+		}
+
+		&--large &__value-wrapper
+		{
+			font-size: 24px;
+		}
+
+		&--large &__input-wrapper
+		{
+			padding: .5*$lh 2*$lh;
+		}
+	}
+
+}
+
+.input-range__input + .slider-container
+{
+	width: 100% !important;
+
+	.back-bar
+	{
+		background: $iron;
+		border-radius: 8px;
+		height: 11px;
+	}
+
+	.selected-bar
+	{
+		background: $atlantis;
+		border-radius: 8px 0 0 8px;
+	}
+
+	.pointer
+	{
+		background: $apple;
+		border: 3px solid $white;
+		box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+		height: 22px;
+		width: 22px;
+	}
+}

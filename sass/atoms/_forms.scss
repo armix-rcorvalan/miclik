@@ -1,0 +1,65 @@
+/*
+form-wrapper > .form-group > .form-row > > .form-input
+*/
+
+.form-wrapper
+{
+	display: grid;
+	grid-column-gap: 1*$lh;
+	grid-row-gap: .5*$lh;
+	grid-template-columns: minmax(0, 1fr);
+
+	@include m
+	{
+		grid-row-gap: 1*$lh;
+	}
+}
+
+.form-group
+{
+	display: block;
+
+	> *
+	{
+		margin-bottom: 3px;
+		margin-top: 3px;
+	}
+}
+
+.form-row
+{
+	display: flex;
+	flex-wrap: nowrap;
+
+	> *
+	{
+		margin-bottom: 3px;
+		margin-right: 6px;
+		margin-top: 3px;
+	}
+}
+
+.form-field
+{
+	width: 100%;
+
+	@for $i from 1 through 20 {
+		&--width-#{$i*5}
+		{
+			width: $i*5%;
+		}
+	}
+}
+
+.form-description
+{
+	font-size: 11px;
+	line-height: .5*$lh;
+	padding: 0 4px;
+
+	a
+	{
+		color: $sunglow;
+		text-decoration: underline;
+	}
+}

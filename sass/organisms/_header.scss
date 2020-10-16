@@ -1,0 +1,135 @@
+.header
+{
+	@include remove-highlight;
+
+	background: $white;
+	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .16);
+	color: $raven;
+	position: relative;
+
+	&__inner
+	{
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+		padding: .5*$lh 1*$lh;
+	}
+
+	&__logo,
+	&__logo-link
+	{
+		display: block;
+	}
+
+	&__logo-image
+	{
+		display: block;
+		height: 1*$lh;
+	}
+
+	&__menu-icon,
+	&__menu-icon-link
+	{
+		display: block;
+	}
+
+	&__menu-icon-image
+	{
+		display: block;
+		height: .75*$lh;
+		transition: transform .3s;
+	}
+
+	&__menu-icon--open &__menu-icon-image
+	{
+		transform: rotate(90deg);
+	}
+
+	@include e-down
+	{
+		&__menu
+		{
+			background: $white;
+			box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .16);
+			left: 0;
+			padding: .25*$lh 0;
+			position: absolute;
+			text-align: center;
+			top: calc( 100% + 13px);
+			transform: translateX(100%);
+			transition: transform .3s;
+			width: 100%;
+		}
+
+		&__menu--open
+		{
+			transform: translateX(0);
+		}
+
+		&__menu-item
+		{
+			border-bottom: 1px solid #eee;
+			display: block;
+			padding: .5*$lh 0;
+		}
+
+		&__menu-item:last-child
+		{
+			border: 0;
+		}
+
+		&__menu-link:not(.header__menu-link--button)
+		{
+			display: block;
+			line-height: 1*$lh;
+		}
+	}
+
+	@include e
+	{
+		&__inner
+		{
+			height: 3*$lh;
+			padding: 0 1.25*$lh;
+		}
+
+		&__menu-icon
+		{
+			display: none;
+		}
+
+		&__logo-image
+		{
+			height: 1.5*$lh
+		}
+
+		&__menu-list
+		{
+			align-items: center;
+			display: flex;
+		}
+
+		&__menu-item
+		{
+			font-weight: 700;
+			margin-left: 1.5*$lh;
+		}
+
+		&__menu-link
+		{
+			&:hover
+			{
+				opacity: .8;
+			}
+		}
+	}
+
+	@include g
+	{
+		&__inner
+		{
+			padding: 0 2*$lh;
+		}
+	}
+
+}

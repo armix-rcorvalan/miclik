@@ -1,0 +1,31 @@
+.banner
+{
+	background-color: $porcelain;
+	padding: 2*$lh 0;
+	text-align: center;
+
+	&__title
+	{
+		margin-bottom: .5*$lh;
+	}
+
+	@include e
+	{
+		padding: 2.75*$lh 0;
+
+		&__title
+		{
+			margin-bottom: 1.25*$lh;
+		}
+	}
+
+	@include g
+	{
+		padding: 3*$lh 0;
+
+		&__title
+		{
+			margin-bottom: 1.5*$lh;
+		}
+	}
+}

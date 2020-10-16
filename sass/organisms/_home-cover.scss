@@ -1,0 +1,139 @@
+.home-cover
+{
+	background-image: url('../images/home-cover-bg.svg');
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	padding: 1*$lh 0;
+
+	&__image-wrapper
+	{
+		align-items: center;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 1*$lh;
+	}
+
+	&__image
+	{
+		display: block;
+		height: auto;
+		width: 130%;
+	}
+
+	&__text-content
+	{
+		text-align: center;
+	}
+
+	&__title
+	{
+		margin: .125*$lh 0;
+	}
+
+	&__read-more
+	{
+		margin-top: 1.5*$lh;
+	}
+
+	@include b
+	{
+		padding: 2*$lh 0;
+
+		&__inner
+		{
+			align-items: center;
+			display: grid;
+			grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+		}
+
+		&__text-content
+		{
+			order: 1;
+			text-align: left;
+			z-index: 2;
+		}
+
+		&__image-wrapper
+		{
+			justify-content: flex-start;
+			margin: 0;
+			order: 2;
+		}
+
+		&__image
+		{
+			height: 11*$lh;
+			width: auto;
+		}
+	}
+
+	@include c
+	{
+		padding: 0;
+
+		&__inner
+		{
+			grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+		}
+
+		&__image
+		{
+			height: 15*$lh;
+			margin-bottom: -1*$lh;
+			margin-top: 1*$lh;
+		}
+	}
+
+	@include d
+	{
+		&__image
+		{
+			height: 18*$lh;
+			margin-left: -1*$lh;
+		}
+	}
+
+	@include e
+	{
+		&__image
+		{
+			height: 27*$lh;
+		}
+
+		&__read-more
+		{
+			margin-top: 2*$lh;
+		}
+	}
+
+	@include g
+	{
+		&__inner
+		{
+			grid-template-columns: minmax(0, 4fr) minmax(0, 5fr);
+		}
+
+		&__title
+		{
+			margin: .25*$lh 0;
+		}
+
+		&__excerpt
+		{
+			max-width: 480px;
+		}
+
+		&__image-wrapper
+		{
+			align-items: flex-start;
+		}
+
+		&__image
+		{
+			height: 36*$lh;
+			margin-top: -1*$lh;
+		}
+	}
+
+}

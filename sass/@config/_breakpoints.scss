@@ -1,0 +1,35 @@
+// Min Width
+$min-width: 320px;
+
+// Breakpoints
+$breakpoint-a: 480px;
+$breakpoint-b: 640px;
+$breakpoint-c: 768px;
+$breakpoint-d: 1024px;
+$breakpoint-e: 1366px;
+$breakpoint-f: 1440px;
+$breakpoint-g: 1800px;
+
+
+@mixin a { @media(min-width: $breakpoint-a) { @content } }
+@mixin b { @media(min-width: $breakpoint-b) { @content } }
+@mixin c { @media(min-width: $breakpoint-c) { @content } }
+@mixin d { @media(min-width: $breakpoint-d) { @content } }
+@mixin e { @media(min-width: $breakpoint-e) { @content } }
+@mixin f { @media(min-width: $breakpoint-f) { @content } }
+@mixin g { @media(min-width: $breakpoint-g) { @content } }
+
+// Only
+@mixin oa { @media (max-width: $breakpoint-a - 1) { @content; } }
+@mixin ob {	@media (min-width: $breakpoint-a) and (max-width: $breakpoint-b - 1) { @content; } }
+@mixin oc { @media (min-width: $breakpoint-b) and (max-width: $breakpoint-c - 1) { @content; } }
+@mixin od { @media (min-width: $breakpoint-c) and (max-width: $breakpoint-d - 1) { @content; } }
+@mixin oe { @media (min-width: $breakpoint-d) and (max-width: $breakpoint-e - 1) { @content; } }
+
+@mixin a-down { @media(max-width: $breakpoint-a - 1) { @content } }
+@mixin b-down { @media(max-width: $breakpoint-b - 1) { @content } }
+@mixin c-down { @media(max-width: $breakpoint-c - 1) { @content } }
+@mixin d-down { @media(max-width: $breakpoint-d - 1) { @content } }
+@mixin e-down { @media(max-width: $breakpoint-e - 1) { @content } }
+@mixin f-down { @media(max-width: $breakpoint-f - 1) { @content } }
+@mixin g-down { @media(max-width: $breakpoint-g - 1) { @content } }

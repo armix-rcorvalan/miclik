@@ -1,0 +1,192 @@
+.footer
+{
+	background-image: linear-gradient(163deg, #78d64b -69%, #1583d8 86%);
+	color: $white;
+	padding: 2*$lh 0 1*$lh;
+	text-align: center;
+
+	&__top
+	{
+		display: grid;
+		grid-row-gap: 1.25*$lh;
+	}
+
+	&__title
+	{
+		font-size: 18px;
+		font-weight: 700;
+		margin-bottom: .25*$lh;
+	}
+
+	&__menu-link,
+	&__contact-link,
+	&__bottom-link,
+	{
+		display: flex;
+		font-size: 14px;
+		height: 1.125*$lh;
+		line-height: 1.125*$lh;
+		justify-content: center;
+
+		&:hover
+		{
+			opacity: .8;
+		}
+
+		.footer__icon
+		{
+			display: block;
+			width: 20px;
+			margin-right: 10px;
+		}
+	}
+
+	&__social-list
+	{
+		align-items: center;
+		display: flex;
+		justify-content: center;
+		margin-top: .55*$lh;
+	}
+
+	&__social-item
+	{
+		margin: 0 6px;
+
+		.footer__icon
+		{
+			display: block;
+			width: 26px;
+		}
+	}
+
+	&__social-link
+	{
+		&:hover
+		{
+			opacity: .8;
+		}
+	}
+
+	&__bottom
+	{
+		border-top: 1px solid rgba(255, 255, 255, 0.5);
+		margin-top: 1*$lh;
+		padding-top: 1*$lh;
+	}
+
+
+	@include a
+	{
+		&__bottom-list
+		{
+			display: flex;
+			justify-content: center;
+		}
+
+		&__bottom-item
+		{
+			margin: 0 10px;
+		}
+	}
+
+	@include b
+	{
+		&__top
+		{
+			grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+		}
+
+		&__logo,
+		&__social
+		{
+			grid-column: span 2;
+		}
+	}
+
+	@include b
+	{
+		&__top
+		{
+			grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+		}
+
+		&__logo
+		{
+			grid-column: span 3;
+		}
+
+		&__social
+		{
+			grid-column: span 1;
+		}
+
+		&__title
+		{
+			text-align: left;
+		}
+
+		&__menu-link,
+		&__contact-link,
+		&__social-list
+		{
+			justify-content: flex-start;
+			margin: 0;
+		}
+	}
+
+	@include d
+	{
+		text-align: left; 
+
+		&__top
+		{
+			grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+		}
+
+		&__logo
+		{
+			grid-column: span 1;
+		}
+
+		&__title
+		{
+			margin-top: .25*$lh;
+		}
+	}
+
+	@include e
+	{
+		&__title
+		{
+			font-size: 20px;
+			margin-bottom: .5*$lh;
+		}
+
+		&__menu-link,
+		&__contact-link,
+		&__bottom-link,
+		{
+			font-size: 16px;
+			height: 1.25*$lh;
+			line-height: 1.25*$lh;
+
+			.footer__icon
+			{
+				width: 24px;
+				margin-right: 10px;
+			}
+		}
+
+		&__social-item
+		{
+			margin: 0 36px 0 0;
+
+			.footer__icon
+			{
+				width: 31px;
+			}
+		}
+
+	}
+}

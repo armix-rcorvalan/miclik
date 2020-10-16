@@ -1,0 +1,104 @@
+.what-need
+{
+	background: $white;
+	padding: 3*$lh 0;
+	text-align: center;
+
+	&__heading
+	{
+		margin-bottom: 2*$lh;
+	}
+
+	&__items
+	{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-bottom: .5*$lh;
+	}
+
+	&__item
+	{
+		margin-bottom: 1.5*$lh;
+		padding: 0 .5*$lh;
+		width: 280px;
+	}
+
+	&__item-image
+	{
+		display: inline-block;
+		height: 4*$lh;
+		width: auto;
+	}
+
+	&__item-text
+	{
+		font-weight: 400;
+	}
+
+	&__doubts
+	{
+		margin-bottom: .5*$lh;
+	}
+
+	@include e
+	{
+		background-image: url('../images/what-need-bg.svg');
+		background-position: center right;
+		background-repeat: no-repeat;
+		background-size: auto 706px;
+		padding: 4.75*$lh 0;
+
+		&__heading
+		{
+			margin-bottom: 3*$lh;
+		}
+
+		&__items
+		{
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			margin-bottom: 2.25*$lh;
+		}
+
+		&__item
+		{
+			width: auto;
+		}
+
+		&__item-image
+		{
+			height: 6.5*$lh;
+			margin-bottom: 2*$lh;
+		}
+
+		&__doubts
+		{
+			font-size: 18px;
+			margin-bottom: .75*$lh;
+		}
+	}
+
+	@include g
+	{
+		background-size: auto 882px;
+		padding: 6*$lh 0;
+
+		&__heading
+		{
+			margin-bottom: 4*$lh;
+		}
+
+		&__doubts
+		{
+			font-size: 22px;
+			margin-bottom: .75*$lh;
+		}
+
+		&__item-image
+		{
+			height: 8*$lh;
+		}
+	}
+
+}

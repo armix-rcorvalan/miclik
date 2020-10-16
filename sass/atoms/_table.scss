@@ -1,0 +1,42 @@
+table.table
+{
+	font-size: 12px;
+	width: 100%;
+
+	thead
+	{
+		color: $robins-egg-blue;
+	}
+
+	thead tr
+	{
+		border-bottom: 1px solid $robins-egg-blue;
+	}
+
+	tbody tr
+	{
+		border-bottom: 1px solid $mercury;
+	}
+
+	td,
+	th
+	{
+		padding: 3px 0;
+	}
+
+	@include l
+	{
+		font-size: 18px;
+
+		tbody
+		{
+			font-size: 14px;
+		}
+
+		td,
+		th
+		{
+			padding: 5px 0;
+		}
+	}
+}

@@ -1,0 +1,110 @@
+.how-work
+{
+	padding: 3*$lh 0;
+	text-align: center;
+
+	&__heading
+	{
+		margin-bottom: 2*$lh;
+	}
+
+	&__items
+	{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	&__item
+	{
+		margin-bottom: 1.5*$lh;
+		max-width: 280px;
+	}
+
+	&__item-image
+	{
+		display: inline-block;
+		height: 6*$lh;
+		margin-bottom: .5*$lh;
+	}
+
+	&__item-title
+	{
+		margin-bottom: .25*$lh;
+	}
+
+	&__button-wrapper
+	{
+		margin-top: .5*$lh;
+	}
+
+	@include c
+	{
+		padding: 4*$lh 0 3*$lh;
+	}
+
+	@include e
+	{
+		background-image: url('../images/how-work-bg.svg');
+		background-position: center left;
+		background-repeat: no-repeat;
+		background-size: auto 878px;
+		padding: 6*$lh 0;
+
+		&__heading
+		{
+			margin-bottom: 1.5*$lh;
+		}
+
+		&__items
+		{
+			display: grid;
+			grid-column-gap: 1*$lh;
+			grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+			margin: 0;
+		}
+
+		&__item
+		{
+			margin: 0;
+			max-width: none;
+		}
+
+		&__item-image
+		{
+			height: 9*$lh;
+			margin-bottom: 2*$lh;
+		}
+
+		&__item-title
+		{
+			margin-bottom: 1*$lh;
+		}
+
+		&__item-excerpt
+		{
+			padding: 0 1*$lh;
+		}
+
+		&__button-wrapper
+		{
+			margin-top: 2*$lh;
+		}
+	}
+
+	@include g
+	{
+		background-size: auto 1098px;
+		padding: 8*$lh 0 6*$lh;
+
+		&__heading
+		{
+			margin-bottom: 4*$lh;
+		}
+
+		&__item-image
+		{
+			height: 10*$lh;
+		}
+	}
+}
