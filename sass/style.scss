@@ -16,9 +16,12 @@
 @import 'atoms/text';
 @import 'atoms/editor';
 @import 'atoms/inputs';
+@import 'atoms/pagination';
 
 // Molecules
 @import 'molecules/posts-item';
+@import 'molecules/posts-item-hz';
+@import 'molecules/posts-layout';
 
 // Organisms
 @import 'organisms/header';
@@ -33,3 +36,8 @@
 
 @import 'organisms/posts-single';
 @import 'organisms/posts-related';
+
+@import 'organisms/page-cover';
+@import 'organisms/video';
+@import 'organisms/posts-featured';
+@import 'organisms/posts-loop';

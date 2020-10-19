@@ -1,0 +1,72 @@
+.video
+{
+	margin: -3.5*$lh 0 2*$lh;
+
+	&__wrapper
+	{
+		display: flex;
+		justify-content: center;
+	}
+
+	&__iframe
+	{
+		display: block;
+		height: (280px / 16 * 9);
+		width: 280px;
+	}
+
+	@include a
+	{
+		margin: -4.5*$lh 0 2*$lh;
+
+		&__iframe
+		{
+			height: (360px / 16 * 9);
+			width: 360px;
+		}
+	}
+
+	@include c
+	{
+		margin: -6.5*$lh 0 2*$lh;
+
+		&__iframe
+		{
+			height: (420px / 16 * 9);
+			width: 420px;
+		}
+	}
+
+	@include d
+	{
+		margin: -6.5*$lh 0 2*$lh;
+
+		&__iframe
+		{
+			height: (480px / 16 * 9);
+			width: 480px;
+		}
+	}
+
+	@include e
+	{
+		margin: -8*$lh 0 3*$lh;
+
+		&__iframe
+		{
+			height: (560px / 16 * 9);
+			width: 560px;
+		}
+	}
+
+	@include g
+	{
+		margin: -10*$lh 0 3*$lh;
+
+		&__iframe
+		{
+			height: (640px / 16 * 9);
+			width: 640px;
+		}
+	}
+}

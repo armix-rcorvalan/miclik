@@ -7,3 +7,5 @@ Esta información la voy a ir actualizando
 [Home] (https://armix.com.ar/staging/miclik/)
 
 [Blog Single] (https://armix.com.ar/staging/miclik/single.php)
+
+[Blog] (https://armix.com.ar/staging/miclik/blog.php)

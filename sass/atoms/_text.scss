@@ -135,9 +135,28 @@
 	color: $bright-gray;
 	font-family: $ff1;
 	font-size: 16px;
-	line-height: 1*$lh;
+	line-height: .75*$lh;
+
+	@include e
+	{
+		line-height: 1*$lh;
+	}
 
 	@include g
+	{
+		font-size: 18px;
+		line-height: 1*$lh;
+	}
+}
+
+.text-3
+{
+	color: $bright-gray;
+	font-family: $ff1;
+	font-size: 16px;
+	line-height: 1*$lh;
+
+	@include e
 	{
 		font-size: 18px;
 		line-height: 1*$lh;

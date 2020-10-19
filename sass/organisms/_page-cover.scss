@@ -1,0 +1,71 @@
+.page-cover
+{
+	background: url('../images/page-cover-bg.svg');
+	background-position: center top;
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	height: 12*$lh;
+	padding: 2*$lh 0 0;
+	text-align: center;
+
+	&__title,
+	&__excerpt
+	{
+		color: $white;
+		margin-bottom: .5*$lh;
+	}
+
+	@include c
+	{
+		background-position: center bottom;
+		background-size: cover;
+		height: 14*$lh;
+
+		&__inner
+		{
+			max-width: 640px;
+		}
+	}
+
+	@include d
+	{
+		padding: 2.75*$lh 0 0 0;
+		height: 16*$lh;
+
+		&__inner
+		{
+			max-width: 640px;
+		}
+	}
+
+	@include e
+	{
+		height: 19*$lh;
+
+		&__inner
+		{
+			max-width: 748px;
+		}
+
+		&__title
+		{
+			margin-bottom: 1.5*$lh;
+		}
+	}
+
+	@include g
+	{
+		height: 22*$lh;
+		padding: 4*$lh 0 0 0;
+
+		&__inner
+		{
+			max-width: 748px;
+		}
+
+		&__title
+		{
+			margin-bottom: 1.5*$lh;
+		}
+	}
+}

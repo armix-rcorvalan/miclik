@@ -3,7 +3,7 @@
 		<div class="posts-last__heading">
 			<h2 class="posts-last__title title-2">¿Querés aprender <br>más sobre finanzas?</h2>
 		</div>
-		<div class="posts-last__items">
+		<div class="posts-last__items posts-layout">
 			<?php $class = "posts-last__item"; $post_id = 6; require TD . '/parts/molecules/posts-item.php'; ?>
 			<?php $class = "posts-last__item"; $post_id = 7; require TD . '/parts/molecules/posts-item.php'; ?>
 			<?php $class = "posts-last__item"; $post_id = 8; require TD . '/parts/molecules/posts-item.php'; ?>

@@ -1,0 +1,29 @@
+.posts-loop
+{
+	background-color: $porcelain;
+	border-radius: 120px 0 0 0;
+	padding: 3*$lh 0;
+	position: relative;
+	z-index: 2;
+
+	&__pagination
+	{
+		margin-top: 1.5*$lh;
+	}
+
+	@include e
+	{
+		border-radius: 280px 0 0 0;
+		padding: 4.75*$lh 0;
+
+		&__pagination
+		{
+			margin-top: 3*$lh;
+		}
+	}
+
+	@include g
+	{
+		padding: 6*$lh 0;
+	}
+}
