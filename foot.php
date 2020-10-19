@@ -4,6 +4,7 @@
 <script src="javascripts/header.js"></script>
 <script src="javascripts/calculator.js"></script>
 <script src="javascripts/how-work-questions.js"></script>
+<script src="javascripts/faq.js"></script>
 
 </body>
 </html>

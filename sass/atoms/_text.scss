@@ -88,6 +88,20 @@
 	}
 }
 
+.title-5
+{
+	color: $mine-shaft;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: .75*$lh;
+
+	@include e
+	{
+		font-size: 32px;
+		line-height: 1.25*$lh;
+	}
+}
+
 .title-1,
 .title-2,
 .title-3,

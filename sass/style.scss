@@ -22,6 +22,7 @@
 @import 'molecules/posts-item';
 @import 'molecules/posts-item-hz';
 @import 'molecules/posts-layout';
+@import 'molecules/accordion';
 
 // Organisms
 @import 'organisms/header';
@@ -42,3 +43,5 @@
 @import 'organisms/posts-featured';
 @import 'organisms/posts-loop';
 @import 'organisms/how-work-questions';
+
+@import 'organisms/faq';

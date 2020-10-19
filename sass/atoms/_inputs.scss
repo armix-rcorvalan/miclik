@@ -317,3 +317,30 @@
 		width: 22px;
 	}
 }
+
+.input-search
+{
+	background-color: $white;
+	background-image: url('../images/icon-search.svg');
+	background-repeat: no-repeat;
+	background-position: calc(100% - 16px) 50%;
+	background-size: auto 20px;
+	border-radius: 4px;
+	border: solid 1px $porcelain;
+	box-shadow: 0 0 6px 0 rgba(124, 138, 147, 0.25);
+	color: $bright-gray;
+	font-size: 18px;
+	height: 1.5*$lh;
+	padding: 0 16px;
+
+  	@include placeholder
+  	{
+  		opacity: .5;
+  	}
+
+	@include e
+	{
+		background-size: auto 26px;
+		height: 2*$lh;
+	}
+}

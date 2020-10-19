@@ -1,0 +1,128 @@
+.faq
+{
+	margin-top: -20vw;
+
+	&__search-form
+	{
+		margin-bottom: 3*$lh;
+		text-align: center;
+	}
+
+	&__search-form-input
+	{
+		max-width: 320px;
+		width: 80%;
+	}
+
+	&__inner
+	{
+		max-width: 772px;
+	}
+
+	&__title
+	{
+		margin-bottom: 1*$lh;
+		text-align: center;
+	}
+
+	&__accordion
+	{
+		margin-bottom: 1.5*$lh;
+	}
+
+	&__questions-featured
+	{
+		padding: 1*$lh 0;
+	}
+
+	&__questions
+	{
+		background-color: $porcelain;
+		border-radius: 0 120px 0 0;
+		padding: 3*$lh 0;
+
+		.accordion__item-content
+		{
+			background-color: rgba(124, 138, 147, 0.1);
+			border: solid 1px $porcelain;
+		}
+	}
+
+
+	@include a
+	{
+		margin-top: -4*$lh;
+
+		&__search-form
+		{
+			margin-bottom: 4*$lh;
+		}
+
+		&__title
+		{
+			margin-bottom: 1.25*$lh
+		}
+
+		&__accordion
+		{
+			margin-bottom: 2*$lh;
+		}
+	}
+
+	@include c
+	{
+		margin-top: -6*$lh;
+
+		&__search-form
+		{
+			margin-bottom: 8*$lh;
+		}
+
+		&__search-form-input
+		{
+			max-width: 560px;
+		}
+	}
+
+	@include e
+	{
+		margin-top: -8*$lh;
+
+		&__search-form
+		{
+			margin-bottom: 8.5*$lh;
+		}
+
+		&__questions-featured
+		{
+			padding: 1*$lh 0 3*$lh;
+		}
+
+		&__questions
+		{
+			border-radius: 0 280px 0 0;
+			padding: 3.5*$lh 0 5.5*$lh;
+		}
+	}
+
+	@include g
+	{
+		margin-top: -9*$lh;
+
+		&__search-form
+		{
+			margin-bottom: 12*$lh;
+		}
+
+		&__questions-featured
+		{
+			padding: 1*$lh 0 3*$lh;
+		}
+
+		&__questions
+		{
+			padding: 5*$lh 0 5.5*$lh;
+		}
+
+	}
+}

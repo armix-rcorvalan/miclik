@@ -1,0 +1,47 @@
+.accordion
+{
+
+	&__item-title
+	{
+		background-color: $white;
+		border: solid 2px $porcelain;
+		display: block;
+		position: relative;
+		padding: .5*$lh 1.25*$lh .5*$lh .75*$lh;
+
+		&::after
+		{
+			background-image: url('../images/icon-arrow.svg');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: contain;
+			content: ' ';
+			height: .5*$lh;
+			position: absolute;
+			right: .5*$lh;
+			top: 50%;
+			transform: translateY(-50%) rotate(180deg);
+			width: .5*$lh;
+		}
+	}
+
+	&__item-content
+	{
+		background: $porcelain;
+		display: none;
+		padding: .5*$lh .75*$lh;
+	}
+
+	&__item--active
+	{
+		.accordion__item-content
+		{
+			display: block;
+		}
+
+		.accordion__item-title::after
+		{
+			transform: translateY(-50%) rotate(0);
+		}
+	}
+}
