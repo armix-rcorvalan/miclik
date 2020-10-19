@@ -1,0 +1,95 @@
+.how-work-questions
+{
+	background-image: url('../images/posts-related-bg.svg');
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	background-size: auto 400px;
+	margin-top: -2*$lh;
+	padding-bottom: 2*$lh;
+
+	&__inner
+	{
+		display: grid;
+		grid-row-gap: 1*$lh;
+	}
+
+	&__menu-list
+	{
+		display: grid;
+		grid-template-columns: minmax(0, 1fr);
+		grid-row-gap: 8px;
+	}
+
+	&__menu-link
+	{
+		background-color: $white;
+		border-radius: 4px;
+		box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+		display: block;
+		font-weight: 700;
+		padding: .5*$lh .75*$lh;
+
+		&:hover
+		{
+			background: #eee;
+		}
+	}
+
+	&__menu-item--active &__menu-link
+	{
+		border-right: 4px solid $apple;
+	}
+
+	&__title
+	{
+		margin-bottom: 1*$lh;
+	}
+
+	&__content
+	{
+		background-color: $white;
+		border-radius: 4px;
+		box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+		padding: .5*$lh .75*$lh;
+	}
+
+	@include c
+	{
+		margin-top: -5*$lh;
+		padding-bottom: 3*$lh;
+	}
+
+	@include d
+	{
+		margin-top: -6*$lh;
+		padding-bottom: 3*$lh;
+	}
+
+	@include e
+	{
+		background-size: auto 550px;
+
+		&__inner
+		{
+			grid-template-columns: minmax(0, 3fr) minmax(0, 5fr);
+			grid-column-gap: 3*$lh;
+		}
+
+		&__menu-link
+		{
+			font-size: 20px;
+			padding: .75*$lh 1*$lh;
+		}
+
+		&__content
+		{
+			padding: 2*$lh 1.5*$lh;
+		}
+
+		&__title
+		{
+			margin-bottom: 2*$lh;
+		}
+	}
+
+}

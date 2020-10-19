@@ -3,6 +3,7 @@
 <script src="javascripts/jquery.range-min.js"></script>
 <script src="javascripts/header.js"></script>
 <script src="javascripts/calculator.js"></script>
+<script src="javascripts/how-work-questions.js"></script>
 
 </body>
 </html>

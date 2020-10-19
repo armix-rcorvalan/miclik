@@ -9,3 +9,5 @@ Esta información la voy a ir actualizando
 [Blog Single] (https://armix.com.ar/staging/miclik/single.php)
 
 [Blog] (https://armix.com.ar/staging/miclik/blog.php)
+
+[Como Funciona] (https://armix.com.ar/staging/miclik/como-funciona.php)

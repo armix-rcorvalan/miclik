@@ -88,6 +88,17 @@
 	}
 }
 
+.title-1,
+.title-2,
+.title-3,
+.title-4
+{
+	a
+	{
+		color: $apple;
+	}
+}
+
 .subtitle-1
 {
 	color: $apple;
@@ -180,5 +191,66 @@
 	@include e
 	{
 		margin-top: .5*$lh;
+	}
+}
+
+
+
+
+.text-steps
+{
+	&__item
+	{
+		counter-increment: number;
+		margin-bottom: 1*$lh;
+		padding-left: 2*$lh;
+		position: relative;
+	}
+
+	&__number
+	{
+		align-items: center;
+		background: $white;
+		border-radius: 50%;
+		border: 3px solid $apple;
+		box-sizing: border-box;
+		color: $apple;
+		display: flex;
+		font-size: 16px;
+		font-weight: 700;
+		height: 1.5*$lh;
+		justify-content: center;
+		left: 0;
+		position: absolute;
+		width: 1.5*$lh;
+		top: .25*$lh;
+	}
+
+	&__title
+	{
+		align-items: center;
+		display: flex;
+		min-height: 2*$lh;
+		margin-bottom: .5*$lh;
+	}
+
+	@include e
+	{
+		&__item
+		{
+			padding-left: 3.5*$lh;
+		}
+
+		&__number
+		{
+			font-size: 28px;
+			height: 2.5*$lh;
+			width: 2.5*$lh;
+		}
+
+		&__title
+		{
+			min-height: 3*$lh;
+		}
 	}
 }
