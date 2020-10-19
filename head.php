@@ -7,6 +7,6 @@
 <title>MI Clik</title>
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet"> 
-<link rel="stylesheet" type="text/css" href="stylesheets/style.css?1.01">
+<link rel="stylesheet" type="text/css" href="stylesheets/style.css?1.02">
 </head>
 <body class="<?php echo $body_background; ?>">
