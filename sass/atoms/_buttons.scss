@@ -65,3 +65,25 @@
 	}
 
 }
+
+.button-3
+{
+	background-color: $white;
+	border: 1px solid $apple;
+	border-radius: 4px;
+	color: $apple;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 700;
+	height: 1.3*$lh;
+	line-height: (1.3*$lh - 2px);
+	padding: 0 1*$lh;
+	text-align: center;
+	transition: background-color .1s;
+
+	&:hover
+	{
+		background-color: transparentize($apple, .8);
+	}
+}

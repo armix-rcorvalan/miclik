@@ -1,4 +1,4 @@
-table.table
+/*table.table
 {
 	font-size: 12px;
 	width: 100%;
@@ -37,6 +37,26 @@ table.table
 		th
 		{
 			padding: 5px 0;
+		}
+	}
+}
+*/
+
+.input-table
+{
+	table
+	{
+		background-color: $porcelain;
+		border-radius: 8px;
+		color: $trout;
+		font-size: 12px;
+		line-height: .5*$lh;
+		width: 100%;
+
+		td
+		{
+			padding: .5*$lh .75*$lh;
+			vertical-align: middle;
 		}
 	}
 }

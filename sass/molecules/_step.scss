@@ -1,0 +1,193 @@
+.step
+{
+	display: none;
+
+	&.step--current,
+	&.step--register
+	{
+		display: block;
+	}
+
+	&__heading
+	{
+		color: $slate-gray;
+		font-size: 14px;
+		line-height: .75*$lh;
+		margin-bottom: .75*$lh;
+		text-align: center;
+
+		span
+		{
+			color: $apple;
+			text-decoration: underline;
+		}
+	}
+
+	&__title
+	{
+		color: $bright-gray;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 1*$lh;
+		padding: .25*$lh 0;
+	}
+
+	&__form-group,
+	&__error-group
+	{
+		display: grid;
+		grid-template-columns: minmax(0, 1fr);
+		grid-row-gap: .75*$lh;
+	}
+
+
+	&__next
+	{
+		display: none;
+
+		@include d
+		{
+			display: block;
+			margin-top: .5*$lh;
+			text-align: center;
+		}
+	}
+
+	&__next-button
+	{
+		background: $apple;
+		border-radius: 4px;
+		color: $white;
+		display: inline-block;
+		height: 1.5*$lh;
+		line-height: 1.5*$lh;
+		width: 320px;
+
+		&:hover
+		{
+			background: darken($apple, 10%);
+		}
+	}
+
+	&__info
+	{
+		background-color: $porcelain;
+		border-radius: 8px;
+		display: none;
+		padding: .5*$lh;
+
+		@include d
+		{
+			display: block;
+		}
+	}
+
+	&__info-title
+	{
+		font-size: 18px;
+		font-weight: 700;
+		margin-bottom: .25*$lh;
+	}
+
+	&__info-item
+	{
+		background-image: url('../images/icon-check-orange.svg');
+		background-repeat: no-repeat;
+		background-position: 6px 6px;
+		font-size: 14px;
+		line-height: .75*$lh;
+		padding-left: 1*$lh;
+		margin-bottom: 6px;
+
+		a
+		{
+			color: $selective-yellow;
+			text-decoration: underline;
+		}
+
+	}
+
+	&__amount
+	{
+		align-items: center;
+		border: solid 2px $porcelain;
+		border-radius: 4px;
+		color: $bright-gray;
+		display: flex;
+		font-size: 14px;
+		height: 2*$lh;
+		justify-content: space-between;
+		padding: 0 .75*$lh;
+	}
+
+	&__amount-value
+	{
+		font-size: 16px;
+		font-weight: 700;
+	}
+
+	&__text
+	{
+		font-size: 16px;
+		font-weight: 600;
+		line-height: .75*$lh;
+		text-align: center;
+	}
+
+	&__error-message
+	{
+		align-items: flex-start;
+		background: $white;
+		border: solid 1px $porcelain;
+		border-radius: 8px;
+		display: flex;
+		padding: 1*$lh .75*$lh;
+
+		img
+		{
+			display: block;
+			height: 1.5*$lh;
+			width: 1.5*$lh;
+			margin-right: 8px;
+		}
+
+		p
+		{
+			font-size: 14px;
+			line-height: .75*$lh;
+		}
+
+		a
+		{
+			color: $selective-yellow;
+			text-decoration: underline;
+		}
+	}
+}
+
+.step--finish,
+.step--error,
+.step--register
+{
+	padding: 2*$lh 0;
+
+	.step__icon-finish
+	{
+		margin-bottom: .5*$lh;
+	}
+
+	.input-table + .input-table
+	{
+		margin-top: .75*$lh;
+	}
+
+	@include d
+	{
+		padding: 3*$lh 0 2*$lh;
+	}
+}
+
+.step--error
+{
+
+}

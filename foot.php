@@ -5,6 +5,8 @@
 <script src="javascripts/calculator.js"></script>
 <script src="javascripts/how-work-questions.js"></script>
 <script src="javascripts/faq.js"></script>
+<script src="javascripts/steps.js"></script>
+<script src="javascripts/modal-wizard.js"></script>
 
 </body>
 </html>

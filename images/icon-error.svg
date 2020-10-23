@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="icon-error" transform="translate(-901 -305)">
+    <g id="Icon_ionic-md-sad" data-name="Icon ionic-md-sad" transform="translate(901 305)">
+      <path id="Trazado_1259" data-name="Trazado 1259" d="M19.413,20.25a9.515,9.515,0,0,0-8.6,5.385h17.2A9.515,9.515,0,0,0,19.413,20.25Z" transform="translate(0.587 3.351)" fill="#ffb300"/>
+      <path id="Trazado_1260" data-name="Trazado 1260" d="M23.375,3.375a20,20,0,1,0,20,20A19.995,19.995,0,0,0,23.375,3.375Zm0,36a16,16,0,1,1,16-16A16.048,16.048,0,0,1,23.375,39.375Z" transform="translate(-3.375 -3.375)" fill="#ffb300"/>
+      <path id="Trazado_1261" data-name="Trazado 1261" d="M23.55,17.4a2.625,2.625,0,1,0-2.625-2.625A2.578,2.578,0,0,0,23.55,17.4Z" transform="translate(3.604 0.115)" fill="#ffb300"/>
+      <path id="Trazado_1262" data-name="Trazado 1262" d="M13.313,17.4a2.625,2.625,0,1,0-2.625-2.625A2.578,2.578,0,0,0,13.313,17.4Z" transform="translate(-0.467 0.115)" fill="#ffb300"/>
+    </g>
+  </g>
+</svg>

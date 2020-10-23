@@ -1,0 +1,70 @@
+.counter
+{
+	align-items: center;
+	display: grid;
+	grid-template-columns: auto 1fr auto 1fr auto 1fr auto 1fr auto;
+
+	&__circle
+	{
+		align-items: center;
+		background-color: $iron;
+		border-radius: 50%;
+		color: $white;
+		border: 2px solid $iron;
+		display: flex;
+		font-weight: 600;
+		height: 24px;
+		justify-content: center;
+		width: 24px;
+	}
+
+	&__check
+	{
+		display: none;
+	}
+
+	&__line
+	{
+		background: $iron;
+		height: 3px;
+	}
+
+	.counter__circle.counter__circle--done
+	{
+		background: $apple;
+		border-color: $apple;
+
+		.counter__number
+		{
+			display: none;
+		}
+
+		.counter__check
+		{
+			display: block;
+		}
+
+		& + .counter__line
+		{
+			background: $apple;
+		}
+	}
+
+	.counter__circle.counter__circle--current
+	{
+		background: $white;
+		border-color: $apple;
+		color: $apple;
+	}
+
+	@include g
+	{
+		&__circle
+		{
+			border-width: 3px;
+			height: 36px;
+			font-size: 18px;
+			width: 36px;
+		}
+	}
+}

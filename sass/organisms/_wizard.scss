@@ -1,0 +1,123 @@
+.wizard
+{
+	display: grid;
+	min-height: 100%;
+	grid-template-columns: minmax(0, 1fr);
+	grid-template-rows: auto 1fr;
+	justify-content: center;
+
+	&--error
+	{
+		background: $athens-gray;
+	}
+	
+	&__image
+	{
+		display: none;
+	}
+
+	&__content
+	{
+		height: 100%;
+		grid-template-columns: minmax(0, 1fr);
+		grid-template-rows: auto 1fr auto;
+		justify-self: center;
+		max-width: 510px;
+		width: 100%;
+	}
+
+	&__content-counter
+	{
+		padding: 0.75*$lh 1.25*$lh 1*$lh;
+	}
+
+	&__content-steps
+	{
+		padding: 0 1.25*$lh 2*$lh;
+	}
+
+	&__content-next-button
+	{
+		background: $apple;
+		bottom: 0;
+		color: $white;
+		display: block;
+		font-size: 18px;
+		height: 56px;
+		left: 0;
+		line-height: 56px;
+		position: fixed;
+		text-align: center;
+		width: 100%;
+
+		&:hover
+		{
+			background-color: darken($apple, 10%);
+		}
+	}
+
+	@include d
+	{
+		grid-template-columns: 1fr minmax(320px, 510px);
+		grid-template-rows: minmax(0, 1fr);
+		max-height: 100vh;
+
+		&__header
+		{
+			display: none;
+		}
+
+		&__image
+		{
+			background-image: url('../images/wizard-bg.jpg');
+			background-size: cover;
+			background-position: center;
+			display: block;
+			padding: 0.75*$lh 1*$lh;
+		}
+
+		&__content
+		{
+			grid-template-rows: auto 1fr;
+			justify-content: unset;
+			max-height: 100vh;
+			overflow: auto;
+		}
+
+		&__content-counter
+		{
+			padding: 1*$lh 2*$lh 1.25*$lh;
+		}
+
+		&__content-steps
+		{
+			padding: 0 2*$lh 2*$lh;
+		}
+
+		&__content-next
+		{
+			display: none;
+		}
+
+	}
+
+	@include g
+	{
+		grid-template-columns: 1fr 640px;
+
+		&__content
+		{
+			max-width: none;
+		}
+
+		&__content-counter
+		{
+			padding: 1.5*$lh 2.5*$lh 1.75*$lh;
+		}
+
+		&__content-steps
+		{
+			padding: 0 2.5*$lh 2.5*$lh;
+		}
+	}
+}

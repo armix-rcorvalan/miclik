@@ -17,12 +17,15 @@
 @import 'atoms/editor';
 @import 'atoms/inputs';
 @import 'atoms/pagination';
+@import 'atoms/table';
 
 // Molecules
 @import 'molecules/posts-item';
 @import 'molecules/posts-item-hz';
 @import 'molecules/posts-layout';
 @import 'molecules/accordion';
+@import 'molecules/counter';
+@import 'molecules/step';
 
 // Organisms
 @import 'organisms/header';
@@ -45,3 +48,5 @@
 @import 'organisms/how-work-questions';
 
 @import 'organisms/faq';
+@import 'organisms/wizard';
+@import 'organisms/modal-wizard';

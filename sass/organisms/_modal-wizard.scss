@@ -1,0 +1,116 @@
+.modal-wizard
+{
+	background: rgba(0, 0, 0, .65);
+	display: none;
+	height: 100%;
+	left: 0;
+	min-width: 320px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 99;
+
+	&__inner
+	{
+		align-items: center;
+		display: flex;
+		height: 100%;
+		justify-content: center;
+		padding: 1*$lh;
+	}
+
+	&__item
+	{
+		background: $white;
+		border: solid 3px $selective-yellow;
+		border-radius: 8px;
+		box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.16);
+		max-width: 418px;
+		padding: 1.25*$lh 1*$lh 1*$lh;
+		position: relative;
+		text-align: center;
+	}
+
+	&__close
+	{
+		position: absolute;
+		right: .5*$lh;
+		top: .5*$lh;
+	}
+
+	&__title
+	{
+		margin-bottom: 9px;
+		font-weight: 700;
+		line-height: .75*$lh;
+	}
+
+	&__text
+	{
+		font-size: 14px;
+		line-height: .75*$lh;
+
+		p + p
+		{
+			margin-top: .5*$lh;
+		}
+
+		a
+		{
+			color: $apple;
+			text-decoration: underline;
+		}
+	}
+
+	&__image
+	{
+		display: inline-block;
+		margin-bottom: .5*$lh;
+		margin-top: -4*$lh;
+		height: 6*$lh;
+		width: auto;
+	}
+
+	&--image .modal-wizard__inner
+	{
+		margin-top: 1.5*$lh;
+	}
+}
+
+#modal-wizard-5
+{
+	display: block;
+}
+
+.modal-wizard--green
+{
+	.modal-wizard__item
+	{
+		border-color: $apple;
+	}
+
+	.modal-wizard__title
+	{
+		font-size: 24px;
+		line-height: 1*$lh;
+	}
+
+	.modal-wizard__text
+	{
+		font-size: 16px;
+		margin-top: 1*$lh;
+	}
+
+	.modal-wizard__form
+	{
+		display: grid;
+		grid-row-gap: .5*$lh;
+		margin-top: 1*$lh;
+		text-align: left;
+	}
+
+	.input-submit
+	{
+		text-align: center;
+	}
+}
