@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="UTF-8">
+      <title>MI Clik</title>
+      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+      <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="stylesheets/style.css?1.03">
+   </head>
+   <body class="">
+      <div class="wizard wizard--register">
+         <div class="wizard__header">
+            <header class="header header--wizard">
+               <div class="header__inner">
+                  <h1 class="header__logo">
+                     <a href="#" class="header__logo-link">
+                     <img class="header__logo-image" src="images/logo.svg" alt="Mi clik">
+                     </a>
+                  </h1>
+               </div>
+            </header>
+         </div>
+         <div class="wizard__image">
+            <img src="images/logo.svg" class="wizard__logo">
+         </div>
+         <div class="wizard__content">
+            <div class="wizard__content-steps">
+               <div class="step step--register" id="step-register">
+                  <div class="step__heading">
+                     <div class="step__title">Creá tu cuenta</div>
+                     <div class="step__excerpt">Al crear una cuenta podrás gestionar tus préstamos, acceder a los detalles y ver las novedades.</div>
+                  </div>
+                  <div class="step__form-group">
+                     <div class="input-group">
+                        <div class="input-label">DNI</div>
+                        <div class="input-control">
+                           <input type="text" class="input-text" placeholder="Ingresá tu número de documento">
+                        </div>
+                     </div>
+                     <div class="input-group">
+                        <div class="input-label">Contraseña</div>
+                        <div class="input-control">
+                           <input type="password" class="input-text" placeholder="Ingresá una contraseña">
+                        </div>
+                     </div>
+                     <div class="input-group">
+                        <div class="input-label">Confirmar contraseña</div>
+                        <div class="input-control">
+                           <input type="password" class="input-text" placeholder="Ingresá nuevamente la contraseña">
+                        </div>
+                     </div>
+                     <div class="step__next">
+                        <a href="#" class="step__next-button">Crear cuenta</a>
+                     </div>
+                     <div class="input-group text-center">
+                        <small class="input-help">¿Ya tenés tu cuenta? <a href="#" class="text-green">Ingresá</a>.</small>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="wizard__content-next">
+               <a href="#" class="wizard__content-next-button">Crear Cuenta</a>
+            </div>
+         </div>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js" integrity="sha512-/bOVV1DV1AQXcypckRwsR9ThoCj7FqTV2/0Bm79bL3YSyLkVideFLE3MIZkq1u5t28ke1c0n31WYCOrO01dsUg==" crossorigin="anonymous"></script>
+      <script src="javascripts/jquery.range-min.js"></script>
+      <script src="javascripts/header.js"></script>
+      <script src="javascripts/calculator.js"></script>
+      <script src="javascripts/how-work-questions.js"></script>
+      <script src="javascripts/faq.js"></script>
+      <script src="javascripts/steps.js"></script>
+      <script src="javascripts/modal-wizard.js"></script>
+   </body>
+</html>
