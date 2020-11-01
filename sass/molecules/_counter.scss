@@ -4,6 +4,11 @@
 	display: grid;
 	grid-template-columns: auto 1fr auto 1fr auto 1fr auto 1fr auto;
 
+	&--dashboard
+	{
+		grid-template-columns: auto 1fr auto 1fr auto;
+	}
+
 	&__circle
 	{
 		align-items: center;

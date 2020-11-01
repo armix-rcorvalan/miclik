@@ -1,0 +1,626 @@
+.dc-table
+{
+	border: solid 1px $porcelain;
+	border-radius: 8px;
+	overflow: hidden;
+
+	&__heading
+	{
+		background: $white;
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+		padding: $dc1;
+	}
+
+	&__title
+	{
+		align-items: center;
+		display: flex;
+		font-size: 18px;
+		font-weight: 700;
+
+		img
+		{
+			display: block;
+			height: 15px;
+			margin-left: 8px;
+		}
+
+		@include c
+		{
+			font-size: 32px;
+
+			img
+			{
+				height: 20px;
+				margin-left: 20px;
+			}
+		}
+	}
+
+	&__subtitle
+	{
+		font-size: 18px;
+		font-weight: 700;
+	}
+
+	&__amount-big
+	{
+		font-size: 24px;
+		font-weight: 700;
+	}
+
+	/* Amout */
+
+	&__amount
+	{
+		font-size: 12px;
+		line-height: .75*$lh;
+		text-align: right;
+	}
+
+	&__amount-text
+	{
+		color: $slate-gray;
+	}
+
+	&__amount-value
+	{
+		font-size: 18px;
+		font-weight: 700;
+	}
+
+	/* Foot */
+
+	&__foot
+	{
+		align-items: center;
+		background: $white;
+		display: flex;
+		flex-direction: column;
+		font-size: 12px;
+		line-height: .75*$lh;
+		padding: $dc1;
+		text-align: center;
+
+		@include c
+		{
+			font-size: 14px;
+			flex-direction: row;
+			justify-content: space-between;
+			padding: $dc2;
+		}
+	}
+
+	&__foot-text a
+	{
+		color: $apple;
+		text-decoration: underline;
+	}
+
+	&__foot-button-wrapper
+	{
+		margin-top: .5*$lh;
+
+		@include d
+		{
+			margin: 0;
+		}
+	}
+
+}
+
+.dc-table.dc-table--grow
+{
+	@include c
+	{
+		.dc-table__heading,
+		.dc-table__foot
+		{
+			padding: $dc2;
+		}
+	}
+}
+
+/*
+.dc-table
+{
+	background: $porcelain;
+	border: solid 1px $porcelain;
+	border-radius: 8px;
+	font-size: 14px;
+	line-height: 18PX;
+	overflow-x: auto;
+
+	table
+	{
+		border-collapse: separate;
+		border-spacing: $dc1;
+	}
+
+	td,
+	th
+	{
+		text-align: left;
+		white-space: nowrap;
+	}
+
+	&__grow
+	{
+		width: 100%;
+	}
+
+	&__grow-2
+	{
+		width: 50%;
+	}
+
+	&__grow-3
+	{
+		width: 33%;
+	}
+
+	td.dc-table__right,
+	th.dc-table__right
+	{
+		text-align: right;
+	}
+
+	td.dc-table__center,
+	th.dc-table__center
+	{
+		text-align: center;
+	}
+
+	tfoot tr:first-child
+	{
+		border-top: solid 2px red;
+	}
+}
+
+.dc-table--grow
+{
+	@include c
+	{
+		table
+		{
+			border-spacing: $dc2;
+		}
+	}
+}
+
+
+.dc-table-1
+{
+	table
+	{
+		color: $bright-gray;
+		text-align: left;
+		width: 100%;
+
+		th
+		{
+			font-weight: 600;
+		}
+
+		th,
+		td
+		{
+			padding: 13px;
+		}
+	}
+}
+
+.dc-table-2
+{
+	table
+	{
+		background: $white;
+		border: solid 1px $porcelain;
+		border-radius: 8px;
+		overflow: hidden;
+		text-align: left;
+		width: 100%;
+
+		th
+		{
+			font-size: 18px;
+			font-weight: 600;
+		}
+
+		tr:not(:last-child)
+		{
+			border-bottom: solid 1px $porcelain;
+			width: 100%;
+		}
+
+		tr
+		{
+			@include c
+			{
+				border: 0 !important;
+			}
+		}
+
+		th,
+		td
+		{
+			padding: 13px;
+			vertical-align: middle;
+
+			span
+			{
+				display: block;
+			}
+		}
+
+		strong
+		{
+			font-weight: 600;
+		}
+
+		@include c
+		{
+			td.dc-hide-small
+			{
+				display: table-cell;
+			}
+		}
+	}
+}
+
+.dc-table-3
+{
+	background: $porcelain;
+	border: solid 1px $porcelain;
+	border-radius: 8px;
+	overflow: hidden;
+	
+	table
+	{
+		font-size: 12px;
+		text-align: left;
+		line-height: .5*$lh;
+		width: 100%;
+		max-width: 100%;
+
+		td,
+		th
+		{
+			padding: 6px 13px;
+			white-space: nowrap;
+			vertical-align: middle;
+		}
+
+		tfoot
+		{
+			border-top: 1px solid transparentize(#E2E3E5, .5)
+		}
+
+		
+
+		@include c
+		{
+			font-size: 14px;
+
+			td,
+			th
+			{
+				padding: 12px 26px;
+			}
+		}
+	}
+
+	&__heading
+	{
+		background: $white;
+		padding: 1*$lh 0;
+		text-align: center;
+
+		@include c
+		{
+			align-items: center;
+			display: flex;
+			flex-grow: 1;
+			height: 3*$lh;
+			padding: 0 1*$lh;
+			text-align: left;
+		}
+	}
+
+	&__heading-2
+	{
+		align-items: center;
+		background: $white;
+		padding: .5*$lh;
+		display: flex;
+		justify-content: space-between;
+		text-align: center;
+
+		@include c
+		{
+			padding: .75*$lh;
+		}
+	}
+
+	&__title
+	{
+		align-items: center;
+		display: flex;
+		font-size: 24px;
+		font-weight: 700;
+		justify-content: center;
+		width: 100%;
+
+		img
+		{
+			display: block;
+			height: 15px;
+			margin-left: 8px;
+		}
+
+		@include c
+		{
+			font-size: 32px;
+			justify-content: start;
+			padding-top: 0;
+
+			img
+			{
+				height: 20px;
+				margin-left: 20px;
+			}
+		}
+	}
+
+	&__subtitle,
+	&__amount-big
+	{
+		font-size: 18px;
+		font-weight: 700;
+	}
+
+	&__amount
+	{
+		margin-top: .25*$lh;
+
+		@include d
+		{
+			margin: 0;
+			text-align: right;
+		}
+	}
+
+	&__amount-text
+	{
+		color: $slate-gray;
+		font-size: 12px;
+		line-height: .5*$lh;
+	}
+
+	&__amount-value
+	{
+		font-size: 18px;
+		font-weight: 700;
+	}
+
+	&__foot
+	{
+		background: $white;
+		padding: .75*$lh 0;
+		text-align: center;
+
+		@include d
+		{
+			align-items: center;
+			display: flex;
+			height: 2.25*$lh;
+			justify-content: space-between;
+			margin-top: .5*$lh;
+			padding: 0 1*$lh;
+		}
+	}
+
+	&__foot-text
+	{
+		font-size: 12px;
+		line-height: .75*$lh;
+
+		a
+		{
+			color: $apple;
+			text-decoration: underline;
+		}
+
+		@include d
+		{
+			font-size: 14px;
+		}
+	}
+
+	&__foot-button-wrapper
+	{
+		margin-top: .5*$lh;
+
+		@include d
+		{
+			margin: 0;
+		}
+	}
+
+}
+
+.dc-table-4
+{
+	@extend .dc-table-3;
+	border-radius: 0;
+}
+
+.dc-table-5
+{
+	overflow: hidden;
+	
+	table
+	{
+		font-size: 12px;
+		width: 100%;
+		max-width: 100%;
+
+		thead
+		{
+			background: $porcelain;
+			border-bottom: solid 2px $iron;
+			border-left: solid 2px $iron;
+			border-right: solid 2px $iron;
+		}
+
+		tbody
+		{
+			background: $white;
+			border-bottom: solid 2px $iron;
+			border-left: solid 2px $iron;
+			border-right: solid 2px $iron;
+		}
+
+		td,
+		th
+		{
+			padding: 2px 6px;
+			vertical-align: middle;
+			white-space: nowrap;
+		}
+
+	}
+
+	&__name
+	{
+		text-align: left;
+		width: 100%;
+	}
+
+	&__amount
+	{
+		text-align: right;
+	}
+
+	.input-checkbox
+	{
+		display: inline-flex;
+		vertical-align: middle;
+	}
+
+	&__foot-total
+	{
+		background: $white;
+		border-bottom: solid 2px $iron;
+		border-left: solid 2px $iron;
+		font-size: 14px;
+		font-weight: 700;
+		text-align: left;
+	}
+
+	&__foot-amount
+	{
+		background: $white;
+		border-bottom: solid 2px $iron;
+		border-right: solid 2px $iron;
+		font-size: 14px;
+		font-weight: 700;
+		text-align: right;
+	}
+
+	@include c
+	{
+		table
+		{
+			font-size: 14px;
+
+			td,
+			th
+			{
+				padding: 8px 26px;
+			}
+		}
+
+		&__foot-total,
+		&__foot-amount
+		{
+			font-size: 18px;
+		}
+	}
+
+/*
+	@extend .dc-table-3;
+	border: 0;
+	
+	table
+	{
+
+		thead
+		{
+			border: solid 2px $iron;
+			border-bottom: 0;
+			border-top: 0;
+			text-align: center;
+		}
+
+		tbody
+		{
+			background: $white;
+			border: solid 2px $iron;
+			text-align: center;
+		}
+
+		tfoot,
+		tfoot tr
+		{
+			background: $athens-gray;
+			border: 0;
+		}
+
+		td,
+		th
+		{
+			padding: 2px 6px;
+			white-space: nowrap;
+		}
+
+	}
+
+	&__foot-total
+	{
+		background: $white;
+		border: solid 2px $iron;
+		border-right: 0;
+		border-top: 0;
+		font-size: 14px;
+		font-weight: 700;
+		text-align: center;
+	}
+
+	&__foot-amount
+	{
+		background: $white;
+		border: solid 2px $iron;
+		border-left: 0;
+		border-top: 0;
+		font-size: 14px;
+		font-weight: 700;
+		text-align: center;
+	}
+
+	@include c
+	{
+		table thead,
+		table tbody
+		{
+			text-align: left;
+		}
+
+		
+	}
+
+
+}
+*/

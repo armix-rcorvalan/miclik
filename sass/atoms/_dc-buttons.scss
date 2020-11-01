@@ -1,0 +1,71 @@
+.dc-button-edit
+{
+	align-items: center;
+	color: $apple;
+	display: flex;
+	font-size: 14px;
+	vertical-align: middle;
+	white-space: nowrap;
+
+	img
+	{
+		display: block;
+		margin-right: 6px;
+	}
+
+	&:hover
+	{
+		opacity: .8;
+	}
+}
+
+.dc-button-1
+{
+	background-color: $apple;
+	border-radius: 4px;
+	color: $white;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 400;
+	height: 1.5*$lh;
+	line-height: 1.5*$lh;
+	padding: 0 1*$lh;
+	text-align: center;
+	transition: background-color .1s;
+
+	&:hover
+	{
+		background-color: darken($apple, 10%);
+	}
+}
+
+.dc-button-2
+{
+	@extend .dc-button-1;
+
+	background: $white;
+	border: 1px solid $slate-gray;
+	color: $slate-gray;
+	font-weight: 700;
+
+	&:hover
+	{
+		background-color: rgba(0,0,0,.05);
+	}
+}
+
+.dc-button-3
+{
+	@extend .dc-button-2;
+
+	background: $white;
+	border: 1px solid $apple;
+	color: $apple;
+	font-weight: 700;
+
+	&:hover
+	{
+		background-color: rgba(0,0,0,.05);
+	}
+}

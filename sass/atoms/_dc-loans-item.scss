@@ -1,0 +1,53 @@
+.dc-loans-item
+{
+	align-items: center;
+	background: $porcelain;
+	border: solid 1px $porcelain;
+	border-radius: 4px 4px 0 0;
+	display: flex;
+	min-height: 3*$lh;
+	padding: 13px;
+
+	@include c
+	{
+		padding: 0 26px;
+	}
+
+	&__text
+	{
+		color: $oslo-gray;
+		display: block;
+		font-size: 12px;
+		line-height: .75*$lh;
+
+		@include c
+		{
+			font-size: 14px;
+		}
+	}
+
+	&__title
+	{
+		color: $bright-gray;
+		display: block;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: .75*$lh;
+
+		@include c
+		{
+			font-size: 18px;
+			line-height: 1*$lh;
+		}
+	}
+
+	&__left
+	{
+		flex-grow: 1;
+	}
+
+	&__right
+	{
+		text-align: right;
+	}
+}

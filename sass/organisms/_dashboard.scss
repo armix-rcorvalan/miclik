@@ -1,0 +1,170 @@
+.dashboard
+{
+	background: $athens-gray;
+	display: grid;
+	min-height: 100%;
+	grid-template-rows: auto 1fr auto;
+	padding-bottom: 3*$lh;
+
+	&__header
+	{
+		position: relative;
+		z-index: 3;
+	}
+
+	&__menu
+	{
+		background: $white;
+		border-radius: 8px 8px 0 0;
+		border: solid 1px $iron;
+		bottom: 0;
+		left: 0;
+		padding: .5*$lh;
+		
+	}
+
+	@include d-down
+	{
+		.dashboard__menu
+		{
+			min-width: 320px;
+			position: fixed;
+			width: 100%;
+		}
+	}
+
+	&__menu-list
+	{
+		display: flex;
+		justify-content: center;
+	}
+
+	&__menu-item
+	{
+		display: flex;
+		min-width: 95px;
+		justify-content: center;
+	}
+
+	&__menu-link
+	{
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+
+		&:hover
+		{
+			opacity: .8;
+		}
+	}
+
+	&__menu-icon--active
+	{
+		display: none;
+	}
+
+	&__menu-icon-circle
+	{
+		align-items: center;
+		border: 1px solid $iron;
+		border-radius: 50%;
+		display: flex;
+		height: 40px;
+		width: 40px;
+		justify-content: center;
+	}
+
+	&__menu-text
+	{
+		display: inline-block;
+		font-size: 10px;
+		font-weight: 600;
+		line-height: .5*$lh;
+		margin-top: 4px;
+	}
+
+	&__menu-item--active
+	{
+		color: $apple;
+
+		.dashboard__menu-icon--active
+		{
+			display: block;
+		}
+
+		.dashboard__menu-icon--normal
+		{
+			display: none;
+		}
+	}
+
+	&__menu-list--exit
+	{
+		display: none;
+	}
+
+	@include d
+	{
+		grid-template-columns: 260px 1fr;
+		grid-template-rows: auto 1fr;
+		padding: 0;
+		height: 100%;
+
+		&__header
+		{
+			grid-column: span 2;
+			order: 1;
+		}
+
+		&__menu
+		{
+			align-items: start;
+			box-shadow: 3px 0 6px 0 rgba(0, 0, 0, 0.08);
+			border: 0;
+			border-radius: 0;
+			display: grid;
+			grid-template-rows: 1fr auto;
+			order: 2;
+			padding: .25*$lh 0;
+			position: relative;
+		}
+
+		&__content
+		{
+			order: 3;
+			overflow: auto;
+		}
+
+		&__menu-list
+		{
+			flex-direction: column;
+		}
+
+		&__menu-link
+		{
+			height: 60px;
+			flex-direction: row;
+			padding: 0 1*$lh;
+			width: 100%;
+		}
+
+		&__menu-icon-circle
+		{
+			border: 0;
+			height: auto;
+			width: 34px;
+		}
+
+		&__menu-text
+		{
+			font-size: 14px;
+			font-weight: 400;
+			margin: 0 0 0 .5*$lh;
+		}
+
+		&__menu-list--exit
+		{
+			display: block;
+		}
+	}
+}

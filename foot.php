@@ -7,6 +7,9 @@
 <script src="javascripts/faq.js"></script>
 <script src="javascripts/steps.js"></script>
 <script src="javascripts/modal-wizard.js"></script>
+<script src="javascripts/dashboard-help.js"></script>
+<script src="javascripts/dashboard.js"></script>
+<script src="javascripts/dashboard-modal.js"></script>
 
 </body>
 </html>

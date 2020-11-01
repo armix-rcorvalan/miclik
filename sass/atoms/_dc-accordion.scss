@@ -1,0 +1,52 @@
+.dc-accordion
+{
+
+	&__item-title
+	{
+		background-color: $white;
+		border: solid 2px $porcelain;
+		display: block;
+		font-size: 14px;
+		font-weight: 600;
+		position: relative;
+		padding: .5*$lh 1.25*$lh .5*$lh .75*$lh;
+
+		&::after
+		{
+			background-image: url('../images/icon-arrow.svg');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: contain;
+			content: ' ';
+			height: .5*$lh;
+			position: absolute;
+			right: .5*$lh;
+			top: 50%;
+			transform: translateY(-50%) rotate(180deg);
+			width: .5*$lh;
+		}
+
+		@include d
+		{
+			font-size: 16px;
+		}
+	}
+
+	&__item-content
+	{
+		display: none;
+	}
+
+	&__item--active
+	{
+		.dc-accordion__item-content
+		{
+			display: block;
+		}
+
+		.dc-accordion__item-title::after
+		{
+			transform: translateY(-50%) rotate(0);
+		}
+	}
+}

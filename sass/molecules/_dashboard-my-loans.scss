@@ -1,0 +1,71 @@
+.dc-my-loans-list
+{
+	&__item:not(:last-child)
+	{
+		margin-bottom: .5*$lh;
+
+		@include c
+		{
+			margin-bottom: 1*$lh;
+		}
+	}
+
+	&__link
+	{
+		align-items: center;
+		background: $white;
+		border: solid 1px $porcelain;
+		border-radius: 4px 4px 0 0;
+		display: flex;
+		min-height: 3*$lh;
+		padding: 13px;
+
+		@include c
+		{
+			padding: 0 26px;
+		}
+	}
+
+	&__link-text
+	{
+		color: $oslo-gray;
+		display: block;
+		font-size: 12px;
+		line-height: .75*$lh;
+
+		@include c
+		{
+			font-size: 14px;
+		}
+	}
+
+	&__link-title
+	{
+		color: $bright-gray;
+		display: block;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: .75*$lh;
+
+		@include c
+		{
+			font-size: 18px;
+			line-height: 1*$lh;
+		}
+	}
+
+	&__link-left
+	{
+		flex-grow: 1;
+	}
+
+	&__link-right
+	{
+		padding: 0 26px;
+	}
+
+	&__arrow--icon
+	{
+		display: block;
+	}
+}

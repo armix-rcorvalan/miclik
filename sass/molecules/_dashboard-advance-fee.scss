@@ -1,0 +1,168 @@
+.dc-full-loan
+{
+	align-items: center;
+	background: $white;
+	border-radius: 4px;
+	border: solid 2px $iron;
+	display: flex;
+	height: 2*$lh;
+	justify-content: space-between;
+	padding: 0 .5*$lh;
+
+	label
+	{
+		font-weight: 600;
+	}
+
+	@include d
+	{
+		label
+		{
+			font-size: 14px;
+		}
+	}
+}
+
+
+.dc-pay-fee
+{
+	//background-color: $porcelain;
+
+	&__accordion-content
+	{
+		display: none;
+	}
+
+	&__accordion-link
+	{
+		display: block;
+	}
+
+	&__accordion-title
+	{
+		align-items: center;
+		background: $white;
+		border: solid 2px $iron;
+		display: flex;
+		font-size: 13px;
+		font-weight: 600;
+		height: 2*$lh;
+		padding: 0 0 0 1.25*$lh;
+		position: relative;
+
+		&::after
+		{
+			background-image: url('../images/icon-arrow-top-grey.svg');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: contain;
+			content: ' ';
+			height: .5*$lh;
+			position: absolute;
+			left: .5*$lh;
+			top: 50%;
+			transform: translateY(-50%) rotate(180deg);
+			width: .5*$lh;
+		}
+
+		@include d
+		{
+			font-size: 14px;
+		}
+	}
+
+	&__accordion--active
+	{
+		.dc-pay-fee__accordion-content
+		{
+			display: block;
+		}
+
+		.dc-pay-fee__accordion-title::after
+		{
+			transform: translateY(-50%) rotate(0);
+		}
+	}
+}
+
+.dc-pay-gateway
+{
+	&__title
+	{
+		font-size: 14px;
+		font-weight: 600;
+		margin-bottom: .5*$lh;
+	}
+
+	&__items
+	{
+		align-items: center;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 1*$lh;
+		grid-row-gap: .5*$lh;
+		justify-content: start;
+	}
+
+	&__item
+	{
+		background: $white;
+		border: 2px solid $iron;
+		border-radius: 4px;
+		height: 4*$lh;
+		justify-self: center;
+		position: relative;
+		width: 4*$lh;
+	}
+
+	&__item-input
+	{
+		display: none;
+	}
+
+	&__item-label
+	{
+		align-items: center;
+		cursor: pointer;
+		display: flex;
+		height: inherit;
+		justify-content: center;
+		padding: .5*$lh;
+		width: inherit;
+	}
+
+	&__item-circle
+	{
+		border-radius: 50%;
+		border: 2px solid $apple;
+		display: block;
+		height: 16px;
+		left: 6px;
+		position: absolute;
+		top: 6px;
+		width: 16px;
+	}
+
+	.dc-pay-gateway__item-input:checked + .dc-pay-gateway__item-label .dc-pay-gateway__item-circle::after
+	{
+		background: $apple;
+		border-radius: 50%;
+		content: '';
+		display: block;
+		height: 8px;
+		left: 50%;
+		position: absolute;
+		top: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		width: 8px;
+	}
+
+	@include c
+	{
+		&__items
+		{
+			grid-template-columns: auto auto auto auto;
+			justify-content: start;
+		}
+	}
+}

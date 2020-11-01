@@ -135,7 +135,47 @@
 }
 
 
-.header.header--wizard
+.header.header--wizard,
+.header.header--dashboard,
 {
 	border-radius: 0 0 8px 8px;
+}
+
+.header.header--dashboard
+{
+	.header__user-link
+	{
+		align-items: center;
+		display: flex;
+
+		&:hover
+		{
+			opacity: .8;
+		}
+	}
+
+	.header__user-name
+	{
+		display: none;
+	}
+
+	.header__user-icon
+	{
+		display: block;
+	}
+
+	@include a
+	{
+		.header__user-name
+		{
+			display: block;
+			font-size: 14px;
+			margin-right: 20px;
+		}
+	}
+
+	@include d
+	{
+		border-radius: 0;
+	}
 }

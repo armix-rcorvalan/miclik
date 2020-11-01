@@ -1,0 +1,92 @@
+.dashboard-help
+{
+	bottom: 0;
+	display: none;
+	position: fixed;
+	right: 1.25*$lh;
+
+	&__link
+	{
+		align-items: center;
+		background: $apple;
+		box-shadow: 0 -3px 6px 0 rgba(0, 0, 0, 0.16);
+		border-radius: 8px 8px 0 0;
+		color: $white;
+		display: flex;
+		font-weight: 600;
+		height: 2*$lh;
+		justify-content: center;
+		position: relative;
+		width: 245px;
+		z-index: 2;
+	}
+
+	&__link-text
+	{
+		display: block;
+		margin: 0 1*$lh;
+	}
+
+	&__content
+	{
+		//display: none;
+		background-color: $white;
+		border-radius: 8px 8px 0 0;
+		border: solid 1px $iron;
+		bottom: -400px;
+		box-shadow: 0 -3px 8px 0 rgba(0, 0, 0, 0.1);
+		left: 5px;
+		padding: .5*$lh .8*$lh .75*$lh;
+		position: absolute;
+		//transform: translateY(100%);
+		transition: bottom .3s;
+		width: 240px;
+	}
+
+	&.dashboard-help--active .dashboard-help__content
+	{
+		bottom: calc(100% - 5px);
+		//transform: translateY(0);
+	}
+
+	&__content-title
+	{
+		font-weight: 700;
+		margin-bottom: .5*$lh;
+	}
+
+	&__contact-list
+	{
+		margin-bottom: .5*$lh;
+	}
+
+	&__contact-link
+	{
+		align-items: center;
+		color: $slate-gray;
+		font-size: 14px;
+		display: flex;
+	}
+
+	&__contact-icon
+	{
+		margin-right: 10px;
+	}
+
+	&__text
+	{
+		font-size: 14px;
+		line-height: .75*$lh;
+
+		a
+		{
+			color: $apple;
+			text-decoration: underline;
+		}
+	}
+
+	@include d
+	{
+		display: block;
+	}
+}

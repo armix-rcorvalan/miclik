@@ -1,0 +1,62 @@
+.dc-tabs
+{
+
+	&__menu
+	{
+		background: $white;
+		border: solid 1px $porcelain;
+		border-radius: 4px 4px 0 0;
+		display: flex;
+		margin-bottom: .5*$lh;
+		width: 100%;
+
+		@include c
+		{
+			margin-bottom: 1.25*$lh;
+		}
+	}
+
+	&__menu-link
+	{
+		align-items: center;
+		border-bottom: 3px solid $white;
+		border-top: 3px solid $white;
+		color: $slate-gray;
+		display: flex;
+		font-size: 14px;
+		height: 2*$lh;
+		padding: 0 16px;
+
+		@include c
+		{
+			font-size: 16px;
+			height: 2.25*$lh;
+			padding: 0 26px;
+		}
+	}
+
+	.dc-tabs__menu-item--active .dc-tabs__menu-link
+	{
+		border-bottom-color: $apple;
+		color: $apple;
+		font-size: 16px;
+		font-weight: 700;
+
+		@include c
+		{
+			border-width: 4px;
+			font-size: 18px;
+		}
+	}
+
+	&__content-item
+	{
+		display: none;
+	}
+
+	&__content-item--active
+	{
+		display: block;
+	}
+
+}

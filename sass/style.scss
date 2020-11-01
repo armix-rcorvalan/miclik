@@ -19,6 +19,17 @@
 @import 'atoms/pagination';
 @import 'atoms/table';
 
+@import 'atoms/dc-helpers';
+@import 'atoms/dc-text';
+@import 'atoms/dc-buttons';
+@import 'atoms/dc-table';
+@import 'atoms/dc-cards';
+@import 'atoms/dc-tabs';
+@import 'atoms/dc-accordion';
+@import 'atoms/dc-loans-item';
+@import 'atoms/dc-tip';
+@import 'atoms/dc-badge';
+
 // Molecules
 @import 'molecules/posts-item';
 @import 'molecules/posts-item-hz';
@@ -26,6 +37,10 @@
 @import 'molecules/accordion';
 @import 'molecules/counter';
 @import 'molecules/step';
+
+@import 'molecules/dashboard-content';
+@import 'molecules/dashboard-my-loans';
+@import 'molecules/dashboard-advance-fee';
 
 // Organisms
 @import 'organisms/header';
@@ -50,3 +65,7 @@
 @import 'organisms/faq';
 @import 'organisms/wizard';
 @import 'organisms/modal-wizard';
+
+@import 'organisms/dashboard';
+@import 'organisms/dashboard-help';
+@import 'organisms/dashboard-modal';

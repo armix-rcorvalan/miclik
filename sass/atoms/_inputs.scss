@@ -6,6 +6,12 @@
 	font-weight: 600;
 	line-height: .75*$lh;
 	padding: .125*$lh 0;
+
+	&--info
+	{
+		display: flex;
+		justify-content: space-between;
+	}
 }
 
 .input-help
@@ -376,5 +382,24 @@
 		grid-column-gap: .5*$lh;
 		grid-template-columns: auto auto auto auto auto;
 		justify-content: center;
+	}
+}
+
+.input-table
+{
+	table
+	{
+		background-color: $porcelain;
+		border-radius: 8px;
+		color: $trout;
+		font-size: 12px;
+		line-height: .5*$lh;
+		width: 100%;
+
+		td
+		{
+			padding: .5*$lh .75*$lh;
+			vertical-align: middle;
+		}
 	}
 }

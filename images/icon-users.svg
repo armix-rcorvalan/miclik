@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+  <g id="icon-users" transform="translate(-821 -736)">
+    <circle id="Elipse_341" data-name="Elipse 341" cx="21" cy="21" r="21" transform="translate(821 736)" fill="#5ba637"/>
+    <g id="Icon_feather-users" data-name="Icon feather-users" transform="translate(830.801 744.232)">
+      <path id="Trazado_1161" data-name="Trazado 1161" d="M15.753,27.845V26.063A3.563,3.563,0,0,0,12.19,22.5H5.063A3.563,3.563,0,0,0,1.5,26.063v1.782" transform="translate(0 -7.31)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Trazado_1162" data-name="Trazado 1162" d="M14.626,8.063A3.563,3.563,0,1,1,11.063,4.5,3.563,3.563,0,0,1,14.626,8.063Z" transform="translate(-2.437)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Trazado_1163" data-name="Trazado 1163" d="M32.672,27.924V26.142A3.563,3.563,0,0,0,30,22.7" transform="translate(-11.575 -7.39)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Trazado_1164" data-name="Trazado 1164" d="M24,4.7a3.563,3.563,0,0,1,0,6.9" transform="translate(-9.138 -0.079)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

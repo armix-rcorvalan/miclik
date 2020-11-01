@@ -1,0 +1,93 @@
+.dashboard-modal
+{
+	background: rgba(0, 0, 0, .65);
+	//display: none;
+	display: block;
+	height: 100%;
+	left: 0;
+	min-width: 320px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 99;
+
+	&__inner
+	{
+		align-items: center;
+		display: flex;
+		height: 100%;
+		justify-content: center;
+		padding: 1*$lh;
+	}
+
+	&__item
+	{
+		background: $white;
+		border-radius: 8px;
+		border: solid 1px $porcelain;
+		box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.16);
+		max-width: 418px;
+		padding: 1.25*$lh 1*$lh 1*$lh;
+		position: relative;
+		text-align: center;
+
+		@include c
+		{
+			padding: 2*$lh 1.5*$lh 1.5*$lh;
+		}
+	}
+
+	&__close
+	{
+		position: absolute;
+		right: .5*$lh;
+		top: .5*$lh;
+	}
+
+	&__title
+	{
+		font-size: 16px;
+		font-weight: 700;
+		margin-bottom: .5*$dc1;
+
+		@include c
+		{
+			font-size: 24px;
+			margin-bottom: 1*$dc1;
+		}
+	}
+
+	&__text
+	{
+		font-size: 14px;
+		line-height: .75*$lh;
+		
+
+		p + p
+		{
+			margin-top: .5*$lh;
+		}
+
+		a
+		{
+			color: $apple;
+			text-decoration: underline;
+		}
+	}
+
+	&__form-group
+	{
+		display: grid;
+		grid-row-gap: .5*$lh;
+		grid-template-columns: minmax(0, 1fr);
+		margin-bottom: 1*$dc1;
+		margin-top: 1*$dc1;
+		text-align: left;
+
+		@include c
+		{
+			margin-bottom: 2*$dc1;
+			margin-top: 2*$dc1;
+		}
+	}
+}

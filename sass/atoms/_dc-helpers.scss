@@ -1,0 +1,23 @@
+.dc-hide-small
+{
+	display: none;
+
+	@include c
+	{
+		display: initial;
+	}
+}
+
+.dc-hide-large
+{
+	@include c
+	{
+		display: none;
+	}
+}
+
+.dc-align-center
+{
+	justify-self: center;
+	text-align: center;
+}

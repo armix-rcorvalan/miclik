@@ -1,62 +1,147 @@
-/*table.table
+$tss: 16px / 2;
+$tsl: 24px / 2;
+
+.table
 {
-	font-size: 12px;
-	width: 100%;
+	background: $porcelain;
+	border: solid 1px $porcelain;
+	font-size: 14px;
+	line-height: 18px;
+	padding: $tss 0;
+	overflow-x: auto;
 
-	thead
+	table
 	{
-		color: $robins-egg-blue;
-	}
-
-	thead tr
-	{
-		border-bottom: 1px solid $robins-egg-blue;
-	}
-
-	tbody tr
-	{
-		border-bottom: 1px solid $mercury;
+		width: 100%;
 	}
 
 	td,
 	th
 	{
-		padding: 3px 0;
+		text-align: left;
+		padding: $tss 2*$tss;
+		white-space: nowrap;
 	}
 
-	@include l
+	td
 	{
-		font-size: 18px;
+		vertical-align: middle;
+	}
 
-		tbody
-		{
-			font-size: 14px;
-		}
+	strong
+	{
+		font-weight: 600;
+	}
 
-		td,
-		th
+	&__grow-1
+	{
+		width: 100%;
+	}
+
+	&__grow-2
+	{
+		width: 50%;
+	}
+
+	&__grow-3
+	{
+		width: 33%;
+	}
+
+	&__right
+	{
+		text-align: right !important;
+	}
+
+	&__center
+	{
+		text-align: center !important;
+	}
+
+	tfoot
+	{
+		border-top: solid 1px $iron;
+	}
+}
+
+.table.table--grow
+{
+	@include c
+	{
+		padding: $tsl 0;
+
+		th,
+		td
 		{
-			padding: 5px 0;
+			padding: $tsl 2*$tsl;
 		}
 	}
 }
-*/
 
-.input-table
+.table.table--style-2
 {
+	background: transparent;
+	border: 0;
+	padding: 0;
+
 	table
 	{
-		background-color: $porcelain;
-		border-radius: 8px;
-		color: $trout;
-		font-size: 12px;
-		line-height: .5*$lh;
-		width: 100%;
+		border: 0;
+	}
 
-		td
+	thead
+	{
+		background: $porcelain;
+		border-bottom: solid 2px $iron;
+		border-left: solid 2px $iron;
+		border-right: solid 2px $iron;
+	}
+
+	tbody
+	{
+		background: $white;
+		border-bottom: solid 2px $iron;
+		border-left: solid 2px $iron;
+		border-right: solid 2px $iron;
+	}
+
+	tfoot
+	{
+		background: transparent;
+		border-right: solid 2px $iron;
+	}
+
+	.table__total
+	{
+		background: $white;
+		border-bottom: solid 2px $iron;
+		border-left: solid 2px $iron;
+		font-size: 14px;
+		font-weight: 700;
+
+		@include c
 		{
-			padding: .5*$lh .75*$lh;
-			vertical-align: middle;
+			font-size: 18px;
+			padding: $dc1;
 		}
+	}
+
+	.table__total-amount
+	{
+		margin-left: 8px;
+	}
+
+}
+
+.table.table--white
+{
+	background: $white;
+}
+
+.table.table--style-3
+{
+	@include c
+	{
+		font-size: 16px;
 	}
 }

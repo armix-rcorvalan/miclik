@@ -3,7 +3,8 @@
 	display: none;
 
 	&.step--current,
-	&.step--register
+	&.step--register,
+	&.step--login,
 	{
 		display: block;
 	}
@@ -167,7 +168,8 @@
 
 .step--finish,
 .step--error,
-.step--register
+.step--register,
+.step--login,
 {
 	padding: 2*$lh 0;
 

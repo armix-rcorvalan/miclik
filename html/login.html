@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="UTF-8">
+      <title>MI Clik</title>
+      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+      <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="stylesheets/style.css?1.03">
+   </head>
+   <body class="">
+      <div class="wizard wizard--login">
+         <div class="wizard__header">
+            <header class="header header--wizard">
+               <div class="header__inner">
+                  <h1 class="header__logo">
+                     <a href="#" class="header__logo-link">
+                     <img class="header__logo-image" src="images/logo.svg" alt="Mi clik">
+                     </a>
+                  </h1>
+               </div>
+            </header>
+         </div>
+         <div class="wizard__image">
+            <img src="images/logo.svg" class="wizard__logo">
+         </div>
+         <div class="wizard__content">
+            <div class="wizard__content-steps">
+               <div class="step step--login" id="step-login">
+                  <div class="step__heading">
+                     <div class="step__title">Ingresá a tu cuenta</div>
+                     <div class="step__excerpt">Podrás gestionar tus préstamos, hacer un seguimiento de su estado y obtener nuevas ofertas.</div>
+                  </div>
+                  <div class="step__form-group">
+                     <div class="input-group">
+                        <div class="input-label">DNI</div>
+                        <div class="input-control">
+                           <input type="text" class="input-text" placeholder="Ingresá tu número de documento">
+                        </div>
+                     </div>
+                     <div class="input-group">
+                        <div class="input-label">Contraseña</div>
+                        <div class="input-control">
+                           <input type="password" class="input-text" placeholder="Ingresá una contraseña">
+                        </div>
+                     </div>
+                     <div class="input-group">
+                        <div class="input-control">
+                           <div class="input-checkbox">
+                              <input type="checkbox" id="rememberme">
+                              <label for="rememberme">Recordar DNI</label>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="step__next">
+                        <a href="#" class="step__next-button">Ingresá</a>
+                     </div>
+                     <div class="input-group text-center">
+                        <small class="input-help">¿Olvidaste tu contraseña? <a href="#" class="text-green">Recuperar</a>.</small>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="wizard__content-next">
+               <a href="#" class="wizard__content-next-button">Ingresá</a>
+            </div>
+         </div>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js" integrity="sha512-/bOVV1DV1AQXcypckRwsR9ThoCj7FqTV2/0Bm79bL3YSyLkVideFLE3MIZkq1u5t28ke1c0n31WYCOrO01dsUg==" crossorigin="anonymous"></script>
+      <script src="javascripts/jquery.range-min.js"></script>
+      <script src="javascripts/header.js"></script>
+      <script src="javascripts/calculator.js"></script>
+      <script src="javascripts/how-work-questions.js"></script>
+      <script src="javascripts/faq.js"></script>
+      <script src="javascripts/steps.js"></script>
+      <script src="javascripts/modal-wizard.js"></script>
+   </body>
+</html>

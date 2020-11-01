@@ -1,0 +1,96 @@
+.dc
+{
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+
+	&__inner,
+	&__row,
+	&__col-1,
+	&__col-2,
+	&__col-3,
+	&__col-4,
+	&__col-5,
+	&__col-6,
+	&__form-group
+	{
+		align-items: start;
+		display: grid;
+		grid-column-gap: 1*$lh;
+		grid-row-gap: .5*$lh;
+		grid-template-columns: minmax(0, 1fr);
+		width: 100%;
+
+		@include c
+		{
+			grid-row-gap: 1.25*$lh;
+		}
+	}
+
+	&__form-group
+	{
+		@include c
+		{
+			grid-row-gap: .75*$lh;
+		}
+	}
+
+	&__inner
+	{
+		max-width: 940px;
+		padding: 1*$lh $dc1;
+
+		@include c
+		{
+			padding: 1.5*$lh;
+		}
+	}
+
+	&__row
+	{
+		@include c
+		{
+			grid-template-columns: repeat(6, minmax(0, 1fr));
+		}
+	}
+
+	@include c
+	{
+		padding-bottom: 2*$lh;
+
+		&__col-1
+		{
+			grid-column: span 1;
+		}
+		&__col-2
+		{
+			grid-column: span 2;
+		}
+		&__col-3
+		{
+			grid-column: span 3;
+		}
+		&__col-4
+		{
+			grid-column: span 4;
+		}
+		&__col-5
+		{
+			grid-column: span 5;
+		}
+		&__col-6
+		{
+			grid-column: span 6;
+		}
+	}
+
+	&__submit
+	{
+		text-align: center;
+
+		@include c
+		{
+			text-align: right;
+		}
+	}
+}
